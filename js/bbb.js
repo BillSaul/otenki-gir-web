@@ -29,3 +29,12 @@ function music_play(){
 	document.getElementById("img_stop").style.display = "block";
 	document.getElementById("music").play();
 }
+
+var i = true;
+function auto_play(){
+	if(i) {
+		document.getElementById("music").play();
+		i = false;
+	}
+
+}
