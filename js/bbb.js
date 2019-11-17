@@ -17,3 +17,15 @@ window.onload = function() {
 	})
 
 }
+
+function music_stop(){
+	document.getElementById("img_stop").style.display = "none";
+	document.getElementById("img_play").style.display = "block";
+	document.getElementById("music").pause();
+}
+
+function music_play(){
+	document.getElementById("img_play").style.display = "none";
+	document.getElementById("img_stop").style.display = "block";
+	document.getElementById("music").play();
+}
