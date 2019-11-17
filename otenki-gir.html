@@ -7,9 +7,14 @@
 		<link href="css/aaa.css" type="text/css" rel="stylesheet" />
 	</head>
 	<body>
+		<audio src="music/bg_music.mp3" loop="true" autoplay="autoplay" id="music"></audio>
 		<div class="main">
 			<div class="box">
-				<div style="font-size:20px; color: red; padding: 15px 0 0 0;">¥0</div>
+				<div style="font-size:20px; color: red; padding: 15px 0 0 0;">
+					¥0
+					<img id="img_stop" src="img/stop.png" onclick="music_stop()"/>
+					<img id="img_play" src="img/play.png" onclick="music_play()" />
+				</div>
 				<div style="margin: 8px 0 0 0;">因为下雨而困扰的你，100%的晴天女孩会为你带来阳光😄无论在什么地方...</div>
 				<div style="display: flex;margin: 8px 0 0 0;">
 					<div>
