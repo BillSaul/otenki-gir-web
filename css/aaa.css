@@ -32,3 +32,19 @@
 	padding: 8px 20px;
 	margin: 4px 0 0 0;
 }
+
+#img_stop{
+	width: 20px;
+	height: 20px;
+	float: right;
+	padding: 3px;
+	display: block;
+}
+
+#img_play{
+	width: 20px;
+	height: 20px;
+	float: right;
+	padding: 3px;
+	display: none;
+}
