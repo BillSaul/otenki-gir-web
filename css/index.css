@@ -1,101 +1,99 @@
 *{
-    margin: 0;
     padding: 0;
+    margin: 0;
 }
 
 .main{
+    /* border: 1px solid green; */
     background-image: url(../img/main.jpg);
     background-size: cover;
-    width: 800px;
-    height: 596px;
-    margin: 20px auto;
+    width: 900px;
+    height: 660px;
+    margin: 20px auto 30px auto;
+    position: relative;
 }
 
-.write{
+.input-box{
+    /* border: 1px solid red; */
     background-color: bisque;
+    position: absolute;
+    bottom: 0;
+    right: 55px;
+    width: 370px;
+    height: 335px;
     border-radius: 10px;
-	top: 300px;
-	left: 420px;
-	width: 290px;
-	height: 320px;
-	padding: 0px 20px;
-	box-shadow: rgb(85, 85, 85) 0px 0px 5px;
-	position: relative;
+    box-shadow: rgb(85, 85, 85) 0px 0px 5px;
 }
 
-.img_stop{
-    width: 20px;
-	height: 20px;
-	float: right;
-	padding: 3px;
-	display: block;
+.box1{
+    /* border: 1px solid indigo; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 15px 0px 15px;
 }
 
-.img_play{
-    width: 20px;
-	height: 20px;
-	float: right;
-	padding: 3px;
-	display: none;
-}
-
-.play{
-    font-size: 20px;
+.box1 span{
+    font-size: 22px;
     color: red;
-    padding-top: 15px;
 }
 
-.text{
-    margin: 5px 0 10px 0;
+#img-stop{
+    width: 25px;
+    height: 25px;
+    display: block;
 }
 
-.name{
-    width: 110px;
-    margin: 0;
-    float: left;
-    font-size: 14px;
+#img-play{
+    width: 25px;
+    height: 25px;
+    display: none;
 }
 
-.date{
-    margin-left: 150px;
-    font-size: 14px;
+.box2{
+    /* border: 1px solid hotpink; */
+    margin: 10px 15px 0px 15px;
 }
 
-.address{
-    margin: 5px 0 5px 0;
-    font-size: 14px;
+.box3{
+    /* border: 1px solid aqua; */
+    display: flex;
+    margin: 10px 15px 0px 15px;
+    justify-content: space-between;
 }
 
-.why{
-    font-size: 14px;
-}
-.input_name{
-    width: 100px;
-    margin-top: 3px;
+.box4{
+    /* border: 1px solid thistle; */
+    margin: 10px 15px 0px 15px;
 }
 
-.input_date{
-    width: 130px;
-    margin-top: 3px;
+.input-address{
+    width: 99%;
 }
 
-.input_address{
-    width: 280px;
-    margin-top: 3px;
+.box5{
+    /* border: 1px solid salmon; */
+    margin: 10px 15px 0px 15px;
 }
 
-.input_why{
-    resize: none;
-    width: 280px;
+.input-reason{
+    width: 99.5%;
     height: 50px;
-    margin-top: 3px;
+    resize: none;
 }
 
-.submit{
+.box6{
+    /* border: 1px solid olivedrab; */
+    margin: 5px 15px 0px 15px;
+    text-align: center;
+}
+
+.box6 button{
     background: red;
-	border: none;
-	border-radius: 20px;
-	color: white;
-	padding: 8px 20px;
-	margin: 4px 0 0 0;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    color: white;
+    width: 100px;
+    height: 35px;
 }

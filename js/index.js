@@ -1,8 +1,9 @@
 window.onload = function() {
-	var oBtn = document.getElementsByClassName("submit")[0];
+	var oBtn = document.getElementById("btn");
 
 	oBtn.addEventListener("click", function() {
-		var address = document.getElementsByClassName("input_address")[0].value;
+		var address = document.getElementsByClassName("input-address")[0].value;
+		console.log(address);
 		if (address == "") {
 			alert("你没有填写地址哦")
 		} else {
@@ -19,14 +20,14 @@ window.onload = function() {
 }
 
 function music_stop(){
-	document.getElementsByClassName("img_stop")[0].style.display = "none";
-	document.getElementsByClassName("img_play")[0].style.display = "block";
+	document.getElementById("img-stop").style.display = "none";
+	document.getElementById("img-play").style.display = "block";
 	document.getElementsByClassName("music")[0].pause();
 }
 
 function music_play(){
-	document.getElementsByClassName("img_play")[0].style.display = "none";
-	document.getElementsByClassName("img_stop")[0].style.display = "block";
+	document.getElementById("img-play").style.display = "none";
+	document.getElementById("img-stop").style.display = "block";
 	document.getElementsByClassName("music")[0].play();
 }
 
