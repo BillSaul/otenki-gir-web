@@ -39,3 +39,25 @@ function auto_play(){
 	}
 
 }
+
+if ('mediaSession' in navigator) {
+	navigator.mediaSession.metadata = new MediaMetadata({
+	  title: '陽菜と、走る帆高',
+	  artist: 'RADWIMPS',
+	  album: '100% 晴天女孩',
+	  artwork: [
+		{ src: 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1602909496783&di=646654d2f47331acfa0e2e38997f64a1&imgtype=0&src=http%3A%2F%2Fcdn2.ettoday.net%2Fimages%2F4452%2F4452987.jpg', sizes: '192x192' },
+	  ]
+	});
+  
+	navigator.mediaSession.setActionHandler('play', function() {
+		music_play()
+	});
+	navigator.mediaSession.setActionHandler('pause', function() {
+		music_stop()
+	});
+	navigator.mediaSession.setActionHandler('seekbackward', function() { /* Code excerpted. */ });
+	navigator.mediaSession.setActionHandler('seekforward', function() { /* Code excerpted. */ });
+	navigator.mediaSession.setActionHandler('previoustrack', function() { /* Code excerpted. */ });
+	navigator.mediaSession.setActionHandler('nexttrack', function() { /* Code excerpted. */ });
+  }
